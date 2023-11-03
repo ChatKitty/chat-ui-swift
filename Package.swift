@@ -4,20 +4,24 @@
 import PackageDescription
 
 let package = Package(
-    name: "chat-ui",
+    name: "ChatKittyUI",
+    platforms: [
+        .iOS(.v13), // Specify the platform and minimum version
+        .macOS(.v11)
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "chat-ui",
-            targets: ["chat-ui"]),
+            name: "ChatKittyUI",
+            targets: ["ChatKittyUI"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "chat-ui"),
+            name: "ChatKittyUI"),
         .testTarget(
-            name: "chat-uiTests",
-            dependencies: ["chat-ui"]),
+            name: "ChatKittyUITests",
+            dependencies: ["ChatKittyUI"]),
     ]
 )

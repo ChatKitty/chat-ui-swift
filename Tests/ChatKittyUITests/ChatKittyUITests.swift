@@ -1,7 +1,7 @@
 import XCTest
-@testable import chat_ui
+@testable import ChatKittyUI
 
-final class chat_uiTests: XCTestCase {
+final class ChatKittyUITests: XCTestCase {
     func testExample() throws {
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest
