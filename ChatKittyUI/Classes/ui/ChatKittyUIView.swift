@@ -39,7 +39,7 @@ public final class ChatKittyUIView: UIView {
         
         let options = InitializeOptions(
             username: configuration.username,
-            theme: "dark"
+            theme: configuration.theme
         )
         bridge.onChatUiConnected {
             self.bridge.initialize(options: options)

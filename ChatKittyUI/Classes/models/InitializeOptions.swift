@@ -1,4 +1,4 @@
-struct InitializeOptions : Codable {
+struct InitializeOptions: Codable {
     let username: String
-    let theme: String
+    let theme: Theme?
 }
