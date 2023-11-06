@@ -1,0 +1,27 @@
+{
+  "name": "ChatKittyUI",
+  "version": "0.1.0",
+  "summary": "A short description of ChatKittyUI.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ChatKitty/chat-ui-swift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ChatKitty": "development@chatkitty.com"
+  },
+  "source": {
+    "git": "git@github.com:ChatKitty/chat-ui-swift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "15.0"
+  },
+  "source_files": "ChatKittyUI/Classes/**/*",
+  "dependencies": {
+    "FlexHybridApp": [
+      "~> 1.0.4"
+    ]
+  }
+}

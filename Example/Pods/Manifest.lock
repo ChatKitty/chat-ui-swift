@@ -1,0 +1,23 @@
+PODS:
+  - ChatKittyUI (0.1.0):
+    - FlexHybridApp (~> 1.0.4)
+  - FlexHybridApp (1.0.4)
+
+DEPENDENCIES:
+  - ChatKittyUI (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FlexHybridApp
+
+EXTERNAL SOURCES:
+  ChatKittyUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ChatKittyUI: f6a32e37039bfd61ff9b7bd0eea8d5e599d2df94
+  FlexHybridApp: 4d892a14bb6a400d9e3e02c8400727c83f4539bf
+
+PODFILE CHECKSUM: 4c77876828d6fa72b79c99cb15fde19666632381
+
+COCOAPODS: 1.12.1
