@@ -1,6 +1,5 @@
 # ChatKittyUI
 
-[![CI Status](https://img.shields.io/travis/Alex Nguyen/ChatKittyUI.svg?style=flat)](https://travis-ci.org/Alex Nguyen/ChatKittyUI)
 [![Version](https://img.shields.io/cocoapods/v/ChatKittyUI.svg?style=flat)](https://cocoapods.org/pods/ChatKittyUI)
 [![License](https://img.shields.io/cocoapods/l/ChatKittyUI.svg?style=flat)](https://cocoapods.org/pods/ChatKittyUI)
 [![Platform](https://img.shields.io/cocoapods/p/ChatKittyUI.svg?style=flat)](https://cocoapods.org/pods/ChatKittyUI)
@@ -19,10 +18,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'ChatKittyUI'
 ```
-
-## Author
-
-Alex Nguyen, itsAlexNguyen@users.noreply.github.com
 
 ## License
 
