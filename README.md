@@ -19,6 +19,15 @@ it, simply add the following line to your Podfile:
 pod 'ChatKittyUI'
 ```
 
+## Usage
+
+```swift
+let view = ChatKittyUIView(configuration: ChatUIConfiguration(widgetId: "{WIDGET ID}",
+                                                            username: "{USERNAME}",
+                                                            theme: .dark))
+                                                
+```
+
 ## License
 
 ChatKittyUI is available under the MIT license. See the LICENSE file for more info.
