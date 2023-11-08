@@ -1,7 +1,7 @@
 import UIKit
 import FlexHybridApp
 
-public final class ChatKittyUIView: UIView {
+public final class ChatUIView: UIView {
     // MARK: Private members
     private let configuration: ChatUIConfiguration
     private let flexComponent = FlexComponent()

@@ -2,10 +2,10 @@ import UIKit
 import ChatKittyUI
 
 class ViewController: UIViewController {
-    private lazy var chatkittyUi: ChatKittyUIView = {
-        let view = ChatKittyUIView(configuration: ChatUIConfiguration(widgetId: "UWiEkKvdAaUJ1xut",
-                                                                      username: "c6f75947-af48-4893-a78e-0e0b9bd68580",
-                                                                      theme: .dark))
+    private lazy var chatkittyUi: ChatUIView = {
+        let view = ChatUIView(configuration: ChatUIConfiguration(widgetId: "UWiEkKvdAaUJ1xut",
+                                                                 username: "c6f75947-af48-4893-a78e-0e0b9bd68580",
+                                                                 theme: .dark))
         view.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(view)
         return view
