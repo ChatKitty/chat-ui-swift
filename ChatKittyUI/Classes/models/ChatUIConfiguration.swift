@@ -16,9 +16,9 @@ public struct ChatUiContainer {
     }
 }
 
-public enum Authentication {
+public enum Authentication: Codable {
     case unsecured
-    case authParams(params: Codable)
+    case authParams(params: AnyCodable)
 }
 
 public struct UserProfile {
@@ -38,13 +38,15 @@ public struct ChatUIConfiguration {
     public var container: ChatUiContainer? = nil
     public var theme: Theme? = nil
     public var authentication: Authentication? = nil
+    public var profile: UserProfile? = nil
     
-    public init(widgetId: String, username: String, locale: String? = nil, container: ChatUiContainer? = nil, theme: Theme? = nil, authentication: Authentication? = nil) {
+    public init(widgetId: String, username: String, locale: String? = nil, container: ChatUiContainer? = nil, theme: Theme? = nil, authentication: Authentication? = nil, profile: UserProfile? = nil) {
         self.widgetId = widgetId
         self.username = username
         self.locale = locale
         self.container = container
         self.theme = theme
         self.authentication = authentication
+        self.profile = profile
     }
 }
