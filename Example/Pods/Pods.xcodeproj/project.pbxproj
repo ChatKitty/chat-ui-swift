@@ -7,134 +7,136 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00FB410B278206A653B7217B9C63090C /* FlexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE9003F0DC09C57E6943F84C8B55C10 /* FlexString.swift */; };
-		057D4C49F1895806CC6120D11F299922 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		0CFF857D00E61F1BE6B9748FA17C18C3 /* ChatMountedOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AC1D4C6C7E17FDCD9969F82B02F747 /* ChatMountedOptions.swift */; };
-		0DA0888521184EFFF95A327566D0551D /* BrowserException.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248B1F5484A70F4C6B3DE4A087EE51F /* BrowserException.swift */; };
+		166E85DCF9D3E6CE777CFDADE17EF3F6 /* ChatUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F7E7D6176C656234289C3E0CAA9A0B /* ChatUIView.swift */; };
 		1800E065F24F3A89C5C86423D1C790F2 /* Pods-ChatKittyUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A0E853B85A7DF1F1DD3B71181B2894 /* Pods-ChatKittyUI_Example-dummy.m */; };
-		18C78FCB2F5278934B5B2F42732D8B75 /* InitializeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAAE1FFF5D11F8E22C29BD54C796F4 /* InitializeOptions.swift */; };
-		225270AE29E4990F2D18F6D59F7A292E /* ChatKittyUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EBD5F5BADF7EB675947D6BA92511506 /* ChatKittyUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		23B6B4F5142A84975E328CAF76AF74A8 /* FlexHybridiOS.js in Resources */ = {isa = PBXBuildFile; fileRef = 7ABDAED608FF8399D957287F6280A08D /* FlexHybridiOS.js */; };
-		2E7899FAA306F5B7859AB29F09247C97 /* FlexData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7F4D9B30AFA4645738ADFBA388448 /* FlexData.swift */; };
-		33FE9CCC82AFCA0848DFAC0C19866606 /* FlexWebView.xib in Sources */ = {isa = PBXBuildFile; fileRef = AD40B73E5F1B1FEC8A2FF6425D8F482C /* FlexWebView.xib */; };
-		3DD2F0757E11075D0F4083BBCEBB597F /* FlexWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0383783E01FA8A75385E8561B88D13C1 /* FlexWebView.swift */; };
-		446EEC2550010C1704C91746B84363CC /* ChatKittyUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF1BC78861E654F62A23147BE537EB /* ChatKittyUI-dummy.m */; };
-		48F00F48A0C58716DD018E4FC83582BB /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCEFFCD60FBE1331F5EC46E0C5B46A0 /* DeviceInfo.swift */; };
-		4F858AFA506A82E39ADC3796F40E4A4C /* FlexEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A165311A87D75C0D2158810BB394DD /* FlexEvent.swift */; };
+		1A502AA1665B874F3D3E031C36280C18 /* BrowserException.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248B1F5484A70F4C6B3DE4A087EE51F /* BrowserException.swift */; };
+		219A97AB60A913C965F5C7634D413BDF /* FlexWebView.xib in Sources */ = {isa = PBXBuildFile; fileRef = AD40B73E5F1B1FEC8A2FF6425D8F482C /* FlexWebView.xib */; };
+		240445EBBDE85CDAD4CB4D8759DBBCEB /* FlexAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBADAAC1F7B203DCE7C8F3A7DF8EEB8 /* FlexAction.swift */; };
+		245095C00A3CC6CDD5672207052779E0 /* FlexChatUIBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA1E0451566E2BDBDD187FF1A6A8BC /* FlexChatUIBridge.swift */; };
+		257A3833453B7255D1FEB80D380ACAF3 /* FlexData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7F4D9B30AFA4645738ADFBA388448 /* FlexData.swift */; };
+		280139145428D8CC8469C517A578DB24 /* FlexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE9003F0DC09C57E6943F84C8B55C10 /* FlexString.swift */; };
+		2AAB9000829368BAD57FDA7CB02792B9 /* ChatMountedOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916D64749155970C5435FD2E762C337 /* ChatMountedOptions.swift */; };
+		2D50CD18EB5D43F4EFDC1B38FF2708F5 /* FlexHybridiOS.js in Resources */ = {isa = PBXBuildFile; fileRef = 7ABDAED608FF8399D957287F6280A08D /* FlexHybridiOS.js */; };
+		2DD236401B65B61F2686C5DEC12FBB14 /* ChatKittyUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C4E8D28BB302AD70753B9C8482F761 /* ChatKittyUI-dummy.m */; };
+		302C219AE7B186052D8690B6F97E8A87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		342557FC2A750B0672CE17CD20B87EBC /* FlexHybridApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C394902D2C1CAA2CC29C0031754F7A2A /* FlexHybridApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A590844F6FB6C8C08DAB4B24B5E1061 /* FlexWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0383783E01FA8A75385E8561B88D13C1 /* FlexWebView.swift */; };
+		3F02018B0778D5D7757BC89563785310 /* ChatUIBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F862607E9BDEF7B78182AD4C2509806 /* ChatUIBridge.swift */; };
+		46A087E67D0690B13B9E682065D397EB /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8897CCAC3A9D8E6D06130412147B6D /* AnyCodable.swift */; };
 		55E9B34B432292D2F538F8FE192B92BF /* Pods-ChatKittyUI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6FDB7D38E4835C3C392493B393E6764 /* Pods-ChatKittyUI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		58FEAFB18A6DA02806BF159627DBF772 /* FlexClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3451FD5A0AC8B1F010D2BABCE2B1F18 /* FlexClosure.swift */; };
 		5A190A3EC27F935D50774A7B4650512D /* Pods-ChatKittyUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4F6E3CD70FBC8B97F82D1C444A8FD4E /* Pods-ChatKittyUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61B30819FFBA3E829F205592EF802C28 /* FlexError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940325A5E36407DF56FF67C593DA7AA /* FlexError.swift */; };
-		63F9FCF04641D8881994459896EAFCA6 /* FlexMsg.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BBF2C7B26504FCC47E47DFCAFF4AA7 /* FlexMsg.swift */; };
-		653421D3083AB9451CCAE25E9F520C9F /* FlexChatUIBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E124332C1608C78778232D8EBA2EA23E /* FlexChatUIBridge.swift */; };
-		67F8C005DCB09237E779497DD99F9060 /* BeforeFlexEval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13520DA1458A1B55FE9D5CF33DDDAAB5 /* BeforeFlexEval.swift */; };
-		72CD5202A43BEFF989366E01EAD1C72F /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE61287E57500264B75418B2FC89AE5 /* AnyCodable.swift */; };
+		6D0E4A98CD8E12F98DCE6DA91C0B6AEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		737E64B9991F3D78EB127B18B174AB88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		77FD169771DDBA2B4E92E78686AAEA4C /* FlexHybridApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 775FAA86EE8BDFBE910D22EC11CF6D06 /* FlexHybridApp-dummy.m */; };
+		7B3D937A8D67E14B3E2E9D1A1C26D9E1 /* BeforeFlexEval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13520DA1458A1B55FE9D5CF33DDDAAB5 /* BeforeFlexEval.swift */; };
+		7B48CE2A5A9B41E46E920631DFFA25C6 /* FlexEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A165311A87D75C0D2158810BB394DD /* FlexEvent.swift */; };
 		833B907CE0E47006B8631817A74A7FC4 /* Pods-ChatKittyUI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E81792FD111D563C8127BB8900DED91C /* Pods-ChatKittyUI_Tests-dummy.m */; };
-		85EE15562CCF6E403692500579664520 /* ChatUIBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA525E7B9EACB2E203EE92BD9E58F85C /* ChatUIBridge.swift */; };
-		A52D4891B20A789E196348A44827CD90 /* ChatUIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC863F3084EE6DD24429497A2498A74A /* ChatUIConfiguration.swift */; };
-		A9CA3A0894B46FC646095CA1A36876D1 /* CodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37F22C664B02524B37664473810841C /* CodableExtension.swift */; };
-		B9DFB8D7DECF633A6EC45F0ADF1D3D4A /* FlexHybridApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C394902D2C1CAA2CC29C0031754F7A2A /* FlexHybridApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C6CC54E143189B577308F022BCB0E436 /* ChatUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D72FD3222B013C6D2C3A72BE129FAE /* ChatUIView.swift */; };
-		C878F59E4EC57787BE51E29BD06155C6 /* FlexHybridApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 775FAA86EE8BDFBE910D22EC11CF6D06 /* FlexHybridApp-dummy.m */; };
-		D12E5359ACB7F937FD2974E90214FC11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		890A0D9B35756C4C46C3DF67694C3445 /* CodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37F22C664B02524B37664473810841C /* CodableExtension.swift */; };
+		A22CB540646B6109EADFE9709C947438 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1A4B8F0FF126A49F1659B9DB5A502 /* Notification.swift */; };
+		A643CF0F63F94B9AFA835B5CB2C61BBC /* FlexMsg.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BBF2C7B26504FCC47E47DFCAFF4AA7 /* FlexMsg.swift */; };
+		B923A3652CEB2D51AE46667DD4717CE0 /* ChatUIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B22BD580C97027CCAD1BE3C73A88501 /* ChatUIConfiguration.swift */; };
+		C9BF123461AA8D85A95C82FE7F38E8B8 /* FlexClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3451FD5A0AC8B1F010D2BABCE2B1F18 /* FlexClosure.swift */; };
 		D1C3E5103DCEEAA33E873D1580F73F6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E6B24ABF743EFDEC840AC386ABFB97D3 /* FlexAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBADAAC1F7B203DCE7C8F3A7DF8EEB8 /* FlexAction.swift */; };
-		E98AF60BBBBC5C29A8E8398428EEACD6 /* FlexFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E23E4C81676F2BA0D2E70033ED1FBE6 /* FlexFunc.swift */; };
+		D54F70B24CCEF69BC51D6A0E03E78572 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCEFFCD60FBE1331F5EC46E0C5B46A0 /* DeviceInfo.swift */; };
+		D5ADD456554CB4E13A319B5E5E24A51B /* ChatKittyUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 762A5A9EFD6CE59062074DD2E4E24AF4 /* ChatKittyUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4F934E6A6ADD2CFBE4A70D40788CBB3 /* FlexError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940325A5E36407DF56FF67C593DA7AA /* FlexError.swift */; };
+		EB85325F120AFDB6DED4922CC7891C28 /* InitializeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1ED810773F75D9724813BCF22F5C08 /* InitializeOptions.swift */; };
+		F59F7B534D0A54D64713F26005EB877E /* FlexFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E23E4C81676F2BA0D2E70033ED1FBE6 /* FlexFunc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0725B1DBE7C5B33B273BF3B6D6448B0E /* PBXContainerItemProxy */ = {
+		3B0E952EBD8AE99F7DA0DAF18E0DDC53 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7A72C7355270CCB8A5033D3BF930947F;
 			remoteInfo = FlexHybridApp;
 		};
-		0DAB59F4F0B05178B194716D95625AC3 /* PBXContainerItemProxy */ = {
+		645B181AF77C790180910A36EF2DE71A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 46F0B642BB27DF3DF6C91035BD699E38;
-			remoteInfo = "Pods-ChatKittyUI_Example";
+			remoteGlobalIDString = 7A72C7355270CCB8A5033D3BF930947F;
+			remoteInfo = FlexHybridApp;
 		};
-		4B338EED50936AA9949FB4A68F004FCB /* PBXContainerItemProxy */ = {
+		7DA11C55C7C2792D775939319D0EDF7B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D57181F31F03F7513C893A95EED6CB62;
 			remoteInfo = ChatKittyUI;
 		};
-		DB43CA7C0BB250917948350395CEC808 /* PBXContainerItemProxy */ = {
+		F8F6045C3AD283887A5C57E42633824F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7A72C7355270CCB8A5033D3BF930947F;
-			remoteInfo = FlexHybridApp;
+			remoteGlobalIDString = 46F0B642BB27DF3DF6C91035BD699E38;
+			remoteInfo = "Pods-ChatKittyUI_Example";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0171B6D62F8E4309C15247151F0CCF9E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		019415F6838759EA555CF796195E7888 /* Pods-ChatKittyUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChatKittyUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0383783E01FA8A75385E8561B88D13C1 /* FlexWebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexWebView.swift; path = framework/flexhybridapp/FlexWebView.swift; sourceTree = "<group>"; };
 		058CE9C4C44F86A3F1FC5A4850F4E675 /* Pods-ChatKittyUI_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChatKittyUI_Tests-Info.plist"; sourceTree = "<group>"; };
+		09745E6045322E5DAE47BC3616F1049C /* ChatKittyUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChatKittyUI.modulemap; sourceTree = "<group>"; };
 		0C87C259DE22F8D230CB96B9B3CF73C8 /* FlexHybridApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlexHybridApp; path = FlexHybridApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DCEFFCD60FBE1331F5EC46E0C5B46A0 /* DeviceInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceInfo.swift; path = framework/flexhybridapp/util/DeviceInfo.swift; sourceTree = "<group>"; };
 		13520DA1458A1B55FE9D5CF33DDDAAB5 /* BeforeFlexEval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeforeFlexEval.swift; path = framework/flexhybridapp/BeforeFlexEval.swift; sourceTree = "<group>"; };
 		1508AE146193A154C1B5254D7F666A96 /* FlexHybridApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlexHybridApp.modulemap; sourceTree = "<group>"; };
+		1BE17B212AD37A88EEFB77C36DC80B9C /* ChatKittyUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ChatKittyUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1E7C7D915F067BB65FC8E3D2F947C029 /* Pods-ChatKittyUI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ChatKittyUI_Tests.modulemap"; sourceTree = "<group>"; };
+		209F995F6E3F991FCF737B18A414A2C9 /* ChatKittyUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChatKittyUI-prefix.pch"; sourceTree = "<group>"; };
 		22CA75ED4FA5585AEF9D166C31EB5B91 /* Pods-ChatKittyUI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChatKittyUI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		24CA2D8AC6681C6C9ECF516BA0557A4B /* FlexHybridApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexHybridApp.release.xcconfig; sourceTree = "<group>"; };
 		294CFA3ED924C43DAEA08FDEFA074597 /* Pods-ChatKittyUI_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ChatKittyUI_Tests"; path = Pods_ChatKittyUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A01F32089FAF2960BE20985ED68A9DB /* ChatKittyUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChatKittyUI.debug.xcconfig; sourceTree = "<group>"; };
 		2CF920593A81A33F9B5CA7AE30ED8C5E /* FlexHybridApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexHybridApp.debug.xcconfig; sourceTree = "<group>"; };
-		2D1745928F23813D0C536E8B6CC2A64A /* ChatKittyUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChatKittyUI.debug.xcconfig; sourceTree = "<group>"; };
+		31422A5F9F4DC20C349B468CCFAABBDD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		32C4E8D28BB302AD70753B9C8482F761 /* ChatKittyUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChatKittyUI-dummy.m"; sourceTree = "<group>"; };
 		3D87C50D2DAF3E43A77EF96B9C46F079 /* Pods-ChatKittyUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChatKittyUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3EF7F4D9B30AFA4645738ADFBA388448 /* FlexData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexData.swift; path = framework/flexhybridapp/FlexData.swift; sourceTree = "<group>"; };
+		3F862607E9BDEF7B78182AD4C2509806 /* ChatUIBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatUIBridge.swift; sourceTree = "<group>"; };
 		406B7312B1930303B84DF04EC5A0E7AB /* FlexHybridApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlexHybridApp-Info.plist"; sourceTree = "<group>"; };
-		48D72FD3222B013C6D2C3A72BE129FAE /* ChatUIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatUIView.swift; sourceTree = "<group>"; };
-		49AC1D4C6C7E17FDCD9969F82B02F747 /* ChatMountedOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatMountedOptions.swift; sourceTree = "<group>"; };
-		4BE61287E57500264B75418B2FC89AE5 /* AnyCodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnyCodable.swift; sourceTree = "<group>"; };
+		4916D64749155970C5435FD2E762C337 /* ChatMountedOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatMountedOptions.swift; sourceTree = "<group>"; };
 		4E23E4C81676F2BA0D2E70033ED1FBE6 /* FlexFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexFunc.swift; path = framework/flexhybridapp/util/FlexFunc.swift; sourceTree = "<group>"; };
 		4EBADAAC1F7B203DCE7C8F3A7DF8EEB8 /* FlexAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexAction.swift; path = framework/flexhybridapp/FlexAction.swift; sourceTree = "<group>"; };
-		4EBD5F5BADF7EB675947D6BA92511506 /* ChatKittyUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChatKittyUI-umbrella.h"; sourceTree = "<group>"; };
-		54B719EC455368B489DBEE8068A8DE93 /* ChatKittyUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ChatKittyUI-Info.plist"; sourceTree = "<group>"; };
-		595E59A00488EF43DC0EB620FD5148BC /* ChatKittyUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ChatKittyUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5EBF1BC78861E654F62A23147BE537EB /* ChatKittyUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChatKittyUI-dummy.m"; sourceTree = "<group>"; };
+		51F7E7D6176C656234289C3E0CAA9A0B /* ChatUIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatUIView.swift; sourceTree = "<group>"; };
 		60E05E7356392E33CDB6B0EDFDED8C47 /* Pods-ChatKittyUI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChatKittyUI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		6B22BD580C97027CCAD1BE3C73A88501 /* ChatUIConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatUIConfiguration.swift; sourceTree = "<group>"; };
+		6B8897CCAC3A9D8E6D06130412147B6D /* AnyCodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnyCodable.swift; sourceTree = "<group>"; };
 		6CE9003F0DC09C57E6943F84C8B55C10 /* FlexString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexString.swift; path = framework/flexhybridapp/util/FlexString.swift; sourceTree = "<group>"; };
 		71A0E853B85A7DF1F1DD3B71181B2894 /* Pods-ChatKittyUI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChatKittyUI_Example-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		762A5A9EFD6CE59062074DD2E4E24AF4 /* ChatKittyUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChatKittyUI-umbrella.h"; sourceTree = "<group>"; };
 		775FAA86EE8BDFBE910D22EC11CF6D06 /* FlexHybridApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlexHybridApp-dummy.m"; sourceTree = "<group>"; };
 		783E741D96484D74FA1166104CE4A7C1 /* ChatKittyUI */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChatKittyUI; path = ChatKittyUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ABDAED608FF8399D957287F6280A08D /* FlexHybridiOS.js */ = {isa = PBXFileReference; includeInIndex = 1; name = FlexHybridiOS.js; path = framework/flexhybridapp/js/FlexHybridiOS.js; sourceTree = "<group>"; };
+		7DF181CF34AB7E5D98B82C714040B87C /* ChatKittyUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChatKittyUI.release.xcconfig; sourceTree = "<group>"; };
 		81A165311A87D75C0D2158810BB394DD /* FlexEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexEvent.swift; path = framework/flexhybridapp/FlexEvent.swift; sourceTree = "<group>"; };
 		85E8BDD45F03FF71DA8E9806A2F68124 /* Pods-ChatKittyUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChatKittyUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		863A7792316D42A856A8AA144F1413FC /* Pods-ChatKittyUI_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChatKittyUI_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		87129F3388F7C04F78FAF1FB98235D6C /* Pods-ChatKittyUI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChatKittyUI_Example-frameworks.sh"; sourceTree = "<group>"; };
-		8EBAAE1FFF5D11F8E22C29BD54C796F4 /* InitializeOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InitializeOptions.swift; sourceTree = "<group>"; };
 		93C9D4B226C71087A7996CDAB6831B64 /* Pods-ChatKittyUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChatKittyUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9870DEC7F8D3B204FE6D351BCFBB4840 /* Pods-ChatKittyUI_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ChatKittyUI_Example"; path = Pods_ChatKittyUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AB8CF6CF6B3C23CADE62C49512E556F7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		AC8E5CDB606219D5DAF41B1D7C333662 /* ChatKittyUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChatKittyUI.release.xcconfig; sourceTree = "<group>"; };
+		A448D7A2021CD41EC2AB9474E4C2EFC7 /* ChatKittyUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ChatKittyUI-Info.plist"; sourceTree = "<group>"; };
 		AD40B73E5F1B1FEC8A2FF6425D8F482C /* FlexWebView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FlexWebView.xib; path = framework/flexhybridapp/FlexWebView.xib; sourceTree = "<group>"; };
+		AFFA1E0451566E2BDBDD187FF1A6A8BC /* FlexChatUIBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlexChatUIBridge.swift; sourceTree = "<group>"; };
 		C248B1F5484A70F4C6B3DE4A087EE51F /* BrowserException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BrowserException.swift; path = framework/flexhybridapp/BrowserException.swift; sourceTree = "<group>"; };
 		C3451FD5A0AC8B1F010D2BABCE2B1F18 /* FlexClosure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexClosure.swift; path = framework/flexhybridapp/FlexClosure.swift; sourceTree = "<group>"; };
 		C394902D2C1CAA2CC29C0031754F7A2A /* FlexHybridApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexHybridApp-umbrella.h"; sourceTree = "<group>"; };
 		C4F6E3CD70FBC8B97F82D1C444A8FD4E /* Pods-ChatKittyUI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChatKittyUI_Example-umbrella.h"; sourceTree = "<group>"; };
 		C6A9019F10C7FDBD112B3D578CB76B5F /* Pods-ChatKittyUI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ChatKittyUI_Example.modulemap"; sourceTree = "<group>"; };
 		C940325A5E36407DF56FF67C593DA7AA /* FlexError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexError.swift; path = framework/flexhybridapp/util/FlexError.swift; sourceTree = "<group>"; };
-		CA525E7B9EACB2E203EE92BD9E58F85C /* ChatUIBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatUIBridge.swift; sourceTree = "<group>"; };
-		CC863F3084EE6DD24429497A2498A74A /* ChatUIConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChatUIConfiguration.swift; sourceTree = "<group>"; };
+		D1CCCCC3C30DF9B3ACC0B143102AF77A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		D37F22C664B02524B37664473810841C /* CodableExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableExtension.swift; path = framework/flexhybridapp/util/CodableExtension.swift; sourceTree = "<group>"; };
 		DE98DCDA8CF8AB185FE8B67D613EA7A2 /* Pods-ChatKittyUI_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChatKittyUI_Example-Info.plist"; sourceTree = "<group>"; };
-		E124332C1608C78778232D8EBA2EA23E /* FlexChatUIBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlexChatUIBridge.swift; sourceTree = "<group>"; };
 		E6FDB7D38E4835C3C392493B393E6764 /* Pods-ChatKittyUI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChatKittyUI_Tests-umbrella.h"; sourceTree = "<group>"; };
-		E77386091D9DCBA332121CD578D01611 /* ChatKittyUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChatKittyUI-prefix.pch"; sourceTree = "<group>"; };
 		E81792FD111D563C8127BB8900DED91C /* Pods-ChatKittyUI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChatKittyUI_Tests-dummy.m"; sourceTree = "<group>"; };
 		EAFF00CA48D927DC3B2FE71BD8699C60 /* Pods-ChatKittyUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChatKittyUI_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F248BFB3484EE444E63F1514F33E03AF /* ChatKittyUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChatKittyUI.modulemap; sourceTree = "<group>"; };
+		EC1ED810773F75D9724813BCF22F5C08 /* InitializeOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InitializeOptions.swift; sourceTree = "<group>"; };
+		EED1A4B8F0FF126A49F1659B9DB5A502 /* Notification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		F8BBF2C7B26504FCC47E47DFCAFF4AA7 /* FlexMsg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexMsg.swift; path = framework/flexhybridapp/util/FlexMsg.swift; sourceTree = "<group>"; };
 		FD35EB2C5E22C8D6D2B608EE85DC7C6A /* FlexHybridApp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexHybridApp-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,43 +158,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5AF37D9E57E5A8BAAA599DA3F9F92CF0 /* Frameworks */ = {
+		D3C3468D3B040924621FF9503A900B53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D12E5359ACB7F937FD2974E90214FC11 /* Foundation.framework in Frameworks */,
+				6D0E4A98CD8E12F98DCE6DA91C0B6AEE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B323A0E5B4385A01D956ECB8FCD36FDE /* Frameworks */ = {
+		FA5400159A38D9A0276D37B2523707FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				057D4C49F1895806CC6120D11F299922 /* Foundation.framework in Frameworks */,
+				302C219AE7B186052D8690B6F97E8A87 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A5417142FE6B6038A637B5F369BB642 /* api */ = {
-			isa = PBXGroup;
-			children = (
-				CA525E7B9EACB2E203EE92BD9E58F85C /* ChatUIBridge.swift */,
-			);
-			name = api;
-			path = ChatKittyUI/Classes/api;
-			sourceTree = "<group>";
-		};
-		159694189D0E5418098EC20056C60217 /* AnyCodable */ = {
-			isa = PBXGroup;
-			children = (
-				4BE61287E57500264B75418B2FC89AE5 /* AnyCodable.swift */,
-			);
-			name = AnyCodable;
-			path = AnyCodable;
-			sourceTree = "<group>";
-		};
 		190577AD2DE34104AFEAA13DAA779AAA /* Pods-ChatKittyUI_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +191,16 @@
 			);
 			name = "Pods-ChatKittyUI_Tests";
 			path = "Target Support Files/Pods-ChatKittyUI_Tests";
+			sourceTree = "<group>";
+		};
+		19918A8EDD6A2B6B5809F2BF030F591C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA1E0451566E2BDBDD187FF1A6A8BC /* FlexChatUIBridge.swift */,
+				8B57355557363E9916ECFE6B32242549 /* AnyCodable */,
+			);
+			name = lib;
+			path = ChatKittyUI/Classes/lib;
 			sourceTree = "<group>";
 		};
 		200A2357CB5A3B42C64AA0A7BE7064AF /* Pods-ChatKittyUI_Example */ = {
@@ -232,6 +226,53 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		65126C8B4894DA00AAD25F93F85C4247 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				09745E6045322E5DAE47BC3616F1049C /* ChatKittyUI.modulemap */,
+				32C4E8D28BB302AD70753B9C8482F761 /* ChatKittyUI-dummy.m */,
+				A448D7A2021CD41EC2AB9474E4C2EFC7 /* ChatKittyUI-Info.plist */,
+				209F995F6E3F991FCF737B18A414A2C9 /* ChatKittyUI-prefix.pch */,
+				762A5A9EFD6CE59062074DD2E4E24AF4 /* ChatKittyUI-umbrella.h */,
+				2A01F32089FAF2960BE20985ED68A9DB /* ChatKittyUI.debug.xcconfig */,
+				7DF181CF34AB7E5D98B82C714040B87C /* ChatKittyUI.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ChatKittyUI";
+			sourceTree = "<group>";
+		};
+		699BEC689ADC2766E93F5D60F71940B7 /* ChatKittyUI */ = {
+			isa = PBXGroup;
+			children = (
+				791027983E49C2404FDAEF5E42AA024C /* api */,
+				19918A8EDD6A2B6B5809F2BF030F591C /* lib */,
+				A0B57317F4ADA399AB6DFBD37E153F52 /* models */,
+				D674A872E4D7950CF1B20C7A64A4B691 /* Pod */,
+				65126C8B4894DA00AAD25F93F85C4247 /* Support Files */,
+				758CE9D7487024381E873DA0DCEDB6D6 /* ui */,
+			);
+			name = ChatKittyUI;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		758CE9D7487024381E873DA0DCEDB6D6 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				51F7E7D6176C656234289C3E0CAA9A0B /* ChatUIView.swift */,
+			);
+			name = ui;
+			path = ChatKittyUI/Classes/ui;
+			sourceTree = "<group>";
+		};
+		791027983E49C2404FDAEF5E42AA024C /* api */ = {
+			isa = PBXGroup;
+			children = (
+				3F862607E9BDEF7B78182AD4C2509806 /* ChatUIBridge.swift */,
+			);
+			name = api;
+			path = ChatKittyUI/Classes/api;
 			sourceTree = "<group>";
 		};
 		7A4D001555E19182EE7D60BF76D895A0 /* FlexHybridApp */ = {
@@ -286,81 +327,33 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8B57355557363E9916ECFE6B32242549 /* AnyCodable */ = {
+			isa = PBXGroup;
+			children = (
+				6B8897CCAC3A9D8E6D06130412147B6D /* AnyCodable.swift */,
+			);
+			name = AnyCodable;
+			path = AnyCodable;
+			sourceTree = "<group>";
+		};
 		8C2599495892E1316CF6CAE735144E34 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9A33FCDAAAA3F703687E0AC3AEB263BA /* ChatKittyUI */,
+				699BEC689ADC2766E93F5D60F71940B7 /* ChatKittyUI */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		9A33FCDAAAA3F703687E0AC3AEB263BA /* ChatKittyUI */ = {
+		A0B57317F4ADA399AB6DFBD37E153F52 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				0A5417142FE6B6038A637B5F369BB642 /* api */,
-				A020DA455AC16150FF81F975D2ABA498 /* lib */,
-				B7A615A064C9D491DBFDD4AFDD88A29A /* models */,
-				C847EDD82020F36D54A99D4F474FD2AE /* Pod */,
-				ABC1A399420AAB0E2F5CE5FFCC9C0124 /* Support Files */,
-				AAFE4F6370A4A3005721150BC4B0B0BA /* ui */,
-			);
-			name = ChatKittyUI;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		A020DA455AC16150FF81F975D2ABA498 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				E124332C1608C78778232D8EBA2EA23E /* FlexChatUIBridge.swift */,
-				159694189D0E5418098EC20056C60217 /* AnyCodable */,
-			);
-			name = lib;
-			path = ChatKittyUI/Classes/lib;
-			sourceTree = "<group>";
-		};
-		AAFE4F6370A4A3005721150BC4B0B0BA /* ui */ = {
-			isa = PBXGroup;
-			children = (
-				48D72FD3222B013C6D2C3A72BE129FAE /* ChatUIView.swift */,
-			);
-			name = ui;
-			path = ChatKittyUI/Classes/ui;
-			sourceTree = "<group>";
-		};
-		ABC1A399420AAB0E2F5CE5FFCC9C0124 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F248BFB3484EE444E63F1514F33E03AF /* ChatKittyUI.modulemap */,
-				5EBF1BC78861E654F62A23147BE537EB /* ChatKittyUI-dummy.m */,
-				54B719EC455368B489DBEE8068A8DE93 /* ChatKittyUI-Info.plist */,
-				E77386091D9DCBA332121CD578D01611 /* ChatKittyUI-prefix.pch */,
-				4EBD5F5BADF7EB675947D6BA92511506 /* ChatKittyUI-umbrella.h */,
-				2D1745928F23813D0C536E8B6CC2A64A /* ChatKittyUI.debug.xcconfig */,
-				AC8E5CDB606219D5DAF41B1D7C333662 /* ChatKittyUI.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ChatKittyUI";
-			sourceTree = "<group>";
-		};
-		B7A615A064C9D491DBFDD4AFDD88A29A /* models */ = {
-			isa = PBXGroup;
-			children = (
-				49AC1D4C6C7E17FDCD9969F82B02F747 /* ChatMountedOptions.swift */,
-				CC863F3084EE6DD24429497A2498A74A /* ChatUIConfiguration.swift */,
-				8EBAAE1FFF5D11F8E22C29BD54C796F4 /* InitializeOptions.swift */,
+				4916D64749155970C5435FD2E762C337 /* ChatMountedOptions.swift */,
+				6B22BD580C97027CCAD1BE3C73A88501 /* ChatUIConfiguration.swift */,
+				EC1ED810773F75D9724813BCF22F5C08 /* InitializeOptions.swift */,
+				EED1A4B8F0FF126A49F1659B9DB5A502 /* Notification.swift */,
 			);
 			name = models;
 			path = ChatKittyUI/Classes/models;
-			sourceTree = "<group>";
-		};
-		C847EDD82020F36D54A99D4F474FD2AE /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				595E59A00488EF43DC0EB620FD5148BC /* ChatKittyUI.podspec */,
-				0171B6D62F8E4309C15247151F0CCF9E /* LICENSE */,
-				AB8CF6CF6B3C23CADE62C49512E556F7 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -381,6 +374,16 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D674A872E4D7950CF1B20C7A64A4B691 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1BE17B212AD37A88EEFB77C36DC80B9C /* ChatKittyUI.podspec */,
+				31422A5F9F4DC20C349B468CCFAABBDD /* LICENSE */,
+				D1CCCCC3C30DF9B3ACC0B143102AF77A /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		D7DD0395CB2C7A9CCFA780E48B41CF94 /* Support Files */ = {
@@ -409,11 +412,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1AF1F288DA4DE9C84557A45D4E443106 /* Headers */ = {
+		23A7CD01A8B60659D09264DDE3C6D2B3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9DFB8D7DECF633A6EC45F0ADF1D3D4A /* FlexHybridApp-umbrella.h in Headers */,
+				342557FC2A750B0672CE17CD20B87EBC /* FlexHybridApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,11 +436,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D678F8EB4CC9BF00DE0BF386A2067126 /* Headers */ = {
+		C4C76E19C3ABDE930AA47A189E041739 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				225270AE29E4990F2D18F6D59F7A292E /* ChatKittyUI-umbrella.h in Headers */,
+				D5ADD456554CB4E13A319B5E5E24A51B /* ChatKittyUI-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,8 +459,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				FE3742C6E26B6578DB50EA6174F9EC4A /* PBXTargetDependency */,
-				877117B0DF855CEE71A2B9E8074090A7 /* PBXTargetDependency */,
+				EE28E9795698557EA564C7A7FCF4796D /* PBXTargetDependency */,
+				90101D78CA854983CE521E1358A37433 /* PBXTargetDependency */,
 			);
 			name = "Pods-ChatKittyUI_Example";
 			productName = Pods_ChatKittyUI_Example;
@@ -466,12 +469,12 @@
 		};
 		7A72C7355270CCB8A5033D3BF930947F /* FlexHybridApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A1D9A08C1EDE6706E22D414C0EA0CB3 /* Build configuration list for PBXNativeTarget "FlexHybridApp" */;
+			buildConfigurationList = 977B6B77F56F0364A795136471B667C7 /* Build configuration list for PBXNativeTarget "FlexHybridApp" */;
 			buildPhases = (
-				1AF1F288DA4DE9C84557A45D4E443106 /* Headers */,
-				32C783682CF95BC177433BC88EA4E850 /* Sources */,
-				B323A0E5B4385A01D956ECB8FCD36FDE /* Frameworks */,
-				4BDAAC60185A6D4CC3A8D5FF04B0E269 /* Resources */,
+				23A7CD01A8B60659D09264DDE3C6D2B3 /* Headers */,
+				00D9EF992AC01D101B27DAE59879B0EB /* Sources */,
+				D3C3468D3B040924621FF9503A900B53 /* Frameworks */,
+				768EE0C930322F72781EE043335AA4AC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -494,7 +497,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				5CBDB6E9C3E1E31D14223A634D87C7D6 /* PBXTargetDependency */,
+				073218DE24223AA98E5FA01D91D413F3 /* PBXTargetDependency */,
 			);
 			name = "Pods-ChatKittyUI_Tests";
 			productName = Pods_ChatKittyUI_Tests;
@@ -503,17 +506,17 @@
 		};
 		D57181F31F03F7513C893A95EED6CB62 /* ChatKittyUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFE60ED4F39398E4E43543112EA20B28 /* Build configuration list for PBXNativeTarget "ChatKittyUI" */;
+			buildConfigurationList = 61249F45CCE1AF7A96F58BDBB6ED2664 /* Build configuration list for PBXNativeTarget "ChatKittyUI" */;
 			buildPhases = (
-				D678F8EB4CC9BF00DE0BF386A2067126 /* Headers */,
-				5156E87940088039B4774027B0C1F5B3 /* Sources */,
-				5AF37D9E57E5A8BAAA599DA3F9F92CF0 /* Frameworks */,
-				42AE935F903A420336F8D8D836A4E9A4 /* Resources */,
+				C4C76E19C3ABDE930AA47A189E041739 /* Headers */,
+				4745A8CB10C87D556CBE5AEF181732A1 /* Sources */,
+				FA5400159A38D9A0276D37B2523707FB /* Frameworks */,
+				8D8882927BA70B679505DCE63AFE0D88 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E61F9C8BB702660E509F27BD0A22F422 /* PBXTargetDependency */,
+				16496572BA3DBE7CA9B75CC94D43A0E4 /* PBXTargetDependency */,
 			);
 			name = ChatKittyUI;
 			productName = ChatKittyUI;
@@ -551,13 +554,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		42AE935F903A420336F8D8D836A4E9A4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		49033258C118599DD4017C10C2C591FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -565,11 +561,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BDAAC60185A6D4CC3A8D5FF04B0E269 /* Resources */ = {
+		768EE0C930322F72781EE043335AA4AC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23B6B4F5142A84975E328CAF76AF74A8 /* FlexHybridiOS.js in Resources */,
+				2D50CD18EB5D43F4EFDC1B38FF2708F5 /* FlexHybridiOS.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D8882927BA70B679505DCE63AFE0D88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,25 +586,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		32C783682CF95BC177433BC88EA4E850 /* Sources */ = {
+		00D9EF992AC01D101B27DAE59879B0EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67F8C005DCB09237E779497DD99F9060 /* BeforeFlexEval.swift in Sources */,
-				0DA0888521184EFFF95A327566D0551D /* BrowserException.swift in Sources */,
-				A9CA3A0894B46FC646095CA1A36876D1 /* CodableExtension.swift in Sources */,
-				48F00F48A0C58716DD018E4FC83582BB /* DeviceInfo.swift in Sources */,
-				E6B24ABF743EFDEC840AC386ABFB97D3 /* FlexAction.swift in Sources */,
-				58FEAFB18A6DA02806BF159627DBF772 /* FlexClosure.swift in Sources */,
-				2E7899FAA306F5B7859AB29F09247C97 /* FlexData.swift in Sources */,
-				61B30819FFBA3E829F205592EF802C28 /* FlexError.swift in Sources */,
-				4F858AFA506A82E39ADC3796F40E4A4C /* FlexEvent.swift in Sources */,
-				E98AF60BBBBC5C29A8E8398428EEACD6 /* FlexFunc.swift in Sources */,
-				C878F59E4EC57787BE51E29BD06155C6 /* FlexHybridApp-dummy.m in Sources */,
-				63F9FCF04641D8881994459896EAFCA6 /* FlexMsg.swift in Sources */,
-				00FB410B278206A653B7217B9C63090C /* FlexString.swift in Sources */,
-				3DD2F0757E11075D0F4083BBCEBB597F /* FlexWebView.swift in Sources */,
-				33FE9CCC82AFCA0848DFAC0C19866606 /* FlexWebView.xib in Sources */,
+				7B3D937A8D67E14B3E2E9D1A1C26D9E1 /* BeforeFlexEval.swift in Sources */,
+				1A502AA1665B874F3D3E031C36280C18 /* BrowserException.swift in Sources */,
+				890A0D9B35756C4C46C3DF67694C3445 /* CodableExtension.swift in Sources */,
+				D54F70B24CCEF69BC51D6A0E03E78572 /* DeviceInfo.swift in Sources */,
+				240445EBBDE85CDAD4CB4D8759DBBCEB /* FlexAction.swift in Sources */,
+				C9BF123461AA8D85A95C82FE7F38E8B8 /* FlexClosure.swift in Sources */,
+				257A3833453B7255D1FEB80D380ACAF3 /* FlexData.swift in Sources */,
+				E4F934E6A6ADD2CFBE4A70D40788CBB3 /* FlexError.swift in Sources */,
+				7B48CE2A5A9B41E46E920631DFFA25C6 /* FlexEvent.swift in Sources */,
+				F59F7B534D0A54D64713F26005EB877E /* FlexFunc.swift in Sources */,
+				77FD169771DDBA2B4E92E78686AAEA4C /* FlexHybridApp-dummy.m in Sources */,
+				A643CF0F63F94B9AFA835B5CB2C61BBC /* FlexMsg.swift in Sources */,
+				280139145428D8CC8469C517A578DB24 /* FlexString.swift in Sources */,
+				3A590844F6FB6C8C08DAB4B24B5E1061 /* FlexWebView.swift in Sources */,
+				219A97AB60A913C965F5C7634D413BDF /* FlexWebView.xib in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,18 +616,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5156E87940088039B4774027B0C1F5B3 /* Sources */ = {
+		4745A8CB10C87D556CBE5AEF181732A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72CD5202A43BEFF989366E01EAD1C72F /* AnyCodable.swift in Sources */,
-				446EEC2550010C1704C91746B84363CC /* ChatKittyUI-dummy.m in Sources */,
-				0CFF857D00E61F1BE6B9748FA17C18C3 /* ChatMountedOptions.swift in Sources */,
-				85EE15562CCF6E403692500579664520 /* ChatUIBridge.swift in Sources */,
-				A52D4891B20A789E196348A44827CD90 /* ChatUIConfiguration.swift in Sources */,
-				C6CC54E143189B577308F022BCB0E436 /* ChatUIView.swift in Sources */,
-				653421D3083AB9451CCAE25E9F520C9F /* FlexChatUIBridge.swift in Sources */,
-				18C78FCB2F5278934B5B2F42732D8B75 /* InitializeOptions.swift in Sources */,
+				46A087E67D0690B13B9E682065D397EB /* AnyCodable.swift in Sources */,
+				2DD236401B65B61F2686C5DEC12FBB14 /* ChatKittyUI-dummy.m in Sources */,
+				2AAB9000829368BAD57FDA7CB02792B9 /* ChatMountedOptions.swift in Sources */,
+				3F02018B0778D5D7757BC89563785310 /* ChatUIBridge.swift in Sources */,
+				B923A3652CEB2D51AE46667DD4717CE0 /* ChatUIConfiguration.swift in Sources */,
+				166E85DCF9D3E6CE777CFDADE17EF3F6 /* ChatUIView.swift in Sources */,
+				245095C00A3CC6CDD5672207052779E0 /* FlexChatUIBridge.swift in Sources */,
+				EB85325F120AFDB6DED4922CC7891C28 /* InitializeOptions.swift in Sources */,
+				A22CB540646B6109EADFE9709C947438 /* Notification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,29 +643,29 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5CBDB6E9C3E1E31D14223A634D87C7D6 /* PBXTargetDependency */ = {
+		073218DE24223AA98E5FA01D91D413F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ChatKittyUI_Example";
 			target = 46F0B642BB27DF3DF6C91035BD699E38 /* Pods-ChatKittyUI_Example */;
-			targetProxy = 0DAB59F4F0B05178B194716D95625AC3 /* PBXContainerItemProxy */;
+			targetProxy = F8F6045C3AD283887A5C57E42633824F /* PBXContainerItemProxy */;
 		};
-		877117B0DF855CEE71A2B9E8074090A7 /* PBXTargetDependency */ = {
+		16496572BA3DBE7CA9B75CC94D43A0E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FlexHybridApp;
 			target = 7A72C7355270CCB8A5033D3BF930947F /* FlexHybridApp */;
-			targetProxy = DB43CA7C0BB250917948350395CEC808 /* PBXContainerItemProxy */;
+			targetProxy = 645B181AF77C790180910A36EF2DE71A /* PBXContainerItemProxy */;
 		};
-		E61F9C8BB702660E509F27BD0A22F422 /* PBXTargetDependency */ = {
+		90101D78CA854983CE521E1358A37433 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FlexHybridApp;
 			target = 7A72C7355270CCB8A5033D3BF930947F /* FlexHybridApp */;
-			targetProxy = 0725B1DBE7C5B33B273BF3B6D6448B0E /* PBXContainerItemProxy */;
+			targetProxy = 3B0E952EBD8AE99F7DA0DAF18E0DDC53 /* PBXContainerItemProxy */;
 		};
-		FE3742C6E26B6578DB50EA6174F9EC4A /* PBXTargetDependency */ = {
+		EE28E9795698557EA564C7A7FCF4796D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ChatKittyUI;
 			target = D57181F31F03F7513C893A95EED6CB62 /* ChatKittyUI */;
-			targetProxy = 4B338EED50936AA9949FB4A68F004FCB /* PBXContainerItemProxy */;
+			targetProxy = 7DA11C55C7C2792D775939319D0EDF7B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -683,7 +687,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ChatKittyUI_Tests/Pods-ChatKittyUI_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ChatKittyUI_Tests/Pods-ChatKittyUI_Tests.modulemap";
@@ -701,7 +705,7 @@
 			};
 			name = Release;
 		};
-		549064B958AFC6B1D41B23C231A53FF7 /* Release */ = {
+		1C1321B889CB8FD65925D48B558DAD72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24CA2D8AC6681C6C9ECF516BA0557A4B /* FlexHybridApp.release.xcconfig */;
 			buildSettings = {
@@ -718,7 +722,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/FlexHybridApp/FlexHybridApp-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FlexHybridApp/FlexHybridApp-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FlexHybridApp/FlexHybridApp.modulemap";
 				PRODUCT_MODULE_NAME = FlexHybridApp;
@@ -733,6 +737,71 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		69B9AF49CBE2F65DD268AAFC31801FF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF181CF34AB7E5D98B82C714040B87C /* ChatKittyUI.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ChatKittyUI/ChatKittyUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChatKittyUI/ChatKittyUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ChatKittyUI/ChatKittyUI.modulemap";
+				PRODUCT_MODULE_NAME = ChatKittyUI;
+				PRODUCT_NAME = ChatKittyUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		700C3A64F48000D64692FB595D3D331E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CF920593A81A33F9B5CA7AE30ED8C5E /* FlexHybridApp.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlexHybridApp/FlexHybridApp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlexHybridApp/FlexHybridApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlexHybridApp/FlexHybridApp.modulemap";
+				PRODUCT_MODULE_NAME = FlexHybridApp;
+				PRODUCT_NAME = FlexHybridApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.6;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -862,39 +931,6 @@
 			};
 			name = Release;
 		};
-		99FF6DCFFFC73F7802D79DC49163FC52 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC8E5CDB606219D5DAF41B1D7C333662 /* ChatKittyUI.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ChatKittyUI/ChatKittyUI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ChatKittyUI/ChatKittyUI-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ChatKittyUI/ChatKittyUI.modulemap";
-				PRODUCT_MODULE_NAME = ChatKittyUI;
-				PRODUCT_NAME = ChatKittyUI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		A4377D36102162E5A18EE234626F7690 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 93C9D4B226C71087A7996CDAB6831B64 /* Pods-ChatKittyUI_Tests.debug.xcconfig */;
@@ -912,7 +948,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ChatKittyUI_Tests/Pods-ChatKittyUI_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ChatKittyUI_Tests/Pods-ChatKittyUI_Tests.modulemap";
@@ -946,7 +982,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ChatKittyUI_Example/Pods-ChatKittyUI_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ChatKittyUI_Example/Pods-ChatKittyUI_Example.modulemap";
@@ -980,7 +1016,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ChatKittyUI_Example/Pods-ChatKittyUI_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ChatKittyUI_Example/Pods-ChatKittyUI_Example.modulemap";
@@ -998,9 +1034,9 @@
 			};
 			name = Release;
 		};
-		B49A0689D2AC51BC07C2365303BBC213 /* Debug */ = {
+		E94B9F17EA43A2D31FCCAE14197F2EB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D1745928F23813D0C536E8B6CC2A64A /* ChatKittyUI.debug.xcconfig */;
+			baseConfigurationReference = 2A01F32089FAF2960BE20985ED68A9DB /* ChatKittyUI.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1015,7 +1051,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ChatKittyUI/ChatKittyUI-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ChatKittyUI/ChatKittyUI-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ChatKittyUI/ChatKittyUI.modulemap";
 				PRODUCT_MODULE_NAME = ChatKittyUI;
@@ -1024,38 +1060,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B56565183B82FE1564B5032786FCFA57 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CF920593A81A33F9B5CA7AE30ED8C5E /* FlexHybridApp.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FlexHybridApp/FlexHybridApp-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FlexHybridApp/FlexHybridApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FlexHybridApp/FlexHybridApp.modulemap";
-				PRODUCT_MODULE_NAME = FlexHybridApp;
-				PRODUCT_NAME = FlexHybridApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.6;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1083,20 +1087,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A1D9A08C1EDE6706E22D414C0EA0CB3 /* Build configuration list for PBXNativeTarget "FlexHybridApp" */ = {
+		61249F45CCE1AF7A96F58BDBB6ED2664 /* Build configuration list for PBXNativeTarget "ChatKittyUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B56565183B82FE1564B5032786FCFA57 /* Debug */,
-				549064B958AFC6B1D41B23C231A53FF7 /* Release */,
+				E94B9F17EA43A2D31FCCAE14197F2EB1 /* Debug */,
+				69B9AF49CBE2F65DD268AAFC31801FF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFE60ED4F39398E4E43543112EA20B28 /* Build configuration list for PBXNativeTarget "ChatKittyUI" */ = {
+		977B6B77F56F0364A795136471B667C7 /* Build configuration list for PBXNativeTarget "FlexHybridApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B49A0689D2AC51BC07C2365303BBC213 /* Debug */,
-				99FF6DCFFFC73F7802D79DC49163FC52 /* Release */,
+				700C3A64F48000D64692FB595D3D331E /* Debug */,
+				1C1321B889CB8FD65925D48B558DAD72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
