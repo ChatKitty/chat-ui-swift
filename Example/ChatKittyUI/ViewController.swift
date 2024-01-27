@@ -3,9 +3,24 @@ import ChatKittyUI
 
 class ViewController: UIViewController {
     private lazy var chatkittyUi: ChatUIView = {
-        let view = ChatUIView(configuration: ChatUIConfiguration(widgetId: "UWiEkKvdAaUJ1xut",
-                                                                 username: "2989c53a-d0c5-4222-af8d-fbf7b0c74ec6",
-                                                                 theme: .dark))
+        let configuration = ChatUIConfiguration(widgetId: "UWiEkKvdAaUJ1xut",
+                                                username: "2989c53a-d0c5-4222-af8d-fbf7b0c74ec6",
+                                                theme: .light)
+    
+        let components = ChatUIComponents(
+            onMounted: { context in
+                print("onMounted", context)
+            },
+            onHeaderSelected: { channel in
+                print("onHeaderSelected", channel)
+            },
+            onMenuActionSelected: { action in
+                print("onMenuActionSelected", action)
+            }
+        )
+        
+        let view = ChatUIView(configuration: configuration,
+                              components: components)
         view.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(view)
         return view

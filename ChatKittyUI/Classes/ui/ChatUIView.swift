@@ -4,6 +4,7 @@ import FlexHybridApp
 public final class ChatUIView: UIView {
     // MARK: Private members
     private let configuration: ChatUIConfiguration
+    private let components: ChatUIComponents?
     private let flexComponent = FlexComponent()
     private lazy var bridge: ChatUIBridge = FlexChatUIBridge(component: flexComponent)
     
@@ -16,8 +17,10 @@ public final class ChatUIView: UIView {
     
     // MARK: Initializers
     
-    public init(configuration: ChatUIConfiguration) {
+    public init(configuration: ChatUIConfiguration,
+                components: ChatUIComponents? = nil) {
         self.configuration = configuration
+        self.components = components
         super.init(frame: .zero)
         build()
     }
@@ -41,8 +44,21 @@ public final class ChatUIView: UIView {
             username: configuration.username,
             theme: configuration.theme
         )
-        bridge.onChatUiConnected {
-            self.bridge.initialize(options: options)
+        
+        bridge.onChatUiConnected { [weak self] in
+            self?.bridge.initialize(options: options)
+        }
+        
+        bridge.onChatMounted { [weak self] context in
+            self?.components?.onMounted?(context)
+        }
+        
+        bridge.onChatHeaderSelected { [weak self] channel in
+            self?.components?.onHeaderSelected?(channel)
+        }
+        
+        bridge.onChatMenuActionSelected { [weak self] action in
+            self?.components?.onMenuActionSelected?(action)
         }
         
         flexWebView.load(URLRequest(url: URL(string: "https://ui.chatkitty.com/chat?widget_id=\(configuration.widgetId)")!))

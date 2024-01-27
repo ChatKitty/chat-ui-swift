@@ -50,3 +50,20 @@ public struct ChatUIConfiguration {
         self.profile = profile
     }
 }
+
+
+public struct ChatUIComponents {
+    public let onMounted: ((ChatComponentContext) -> Void)?
+    
+    public let onHeaderSelected: ((Channel) -> Void)?
+    
+    public let onMenuActionSelected: ((MenuAction) -> Void)?
+    
+    public init(onMounted: ((ChatComponentContext) -> Void)? = nil,
+                onHeaderSelected: ((Channel) -> Void)? = nil,
+                onMenuActionSelected: ((MenuAction) -> Void)? = nil) {
+        self.onMounted = onMounted
+        self.onHeaderSelected = onHeaderSelected
+        self.onMenuActionSelected = onMenuActionSelected
+    }
+}

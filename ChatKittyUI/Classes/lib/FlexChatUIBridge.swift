@@ -21,27 +21,39 @@ final class FlexChatUIBridge: ChatUIBridge {
         }
     }
     
-    func onChatMounted(_ onChatMounted: (ChatMountedOptions) -> Void) {
-        component.setInterface("onChatMounted") { args in
-            // TODO: Implementation
+    func onChatMounted(_ onChatMounted: @escaping (ChatComponentContext) -> Void) {
+        component.setInterface("onChatMounted") { (model: ChatComponentContext?) -> Any? in
+            if let chatMountedContext = model {
+                onChatMounted(chatMountedContext)
+            }
+            return nil
         }
     }
     
     func onChatHeaderSelected(_ onChatHeaderSelected: @escaping (Channel) -> Void) {
-        component.setInterface("onChatHeaderSelected") { args in
-            // TODO: Implementation
+        component.setInterface("onChatHeaderSelected") { (model: Channel?) -> Any? in
+            if let channel = model {
+                onChatHeaderSelected(channel)
+            }
+            return nil
         }
     }
     
-    func onChatMenuActionSelected(_ onChatMenuActionSelected: @escaping () -> Void) {
-        component.setInterface("onChatMenuActionSelected") { args in
-            // TODO: Implementation
+    func onChatMenuActionSelected(_ onChatMenuActionSelected: @escaping (MenuAction) -> Void) {
+        component.setInterface("onChatMenuActionSelected") { (model: MenuAction?) -> Any? in
+            if let menuAction = model {
+                onChatMenuActionSelected(menuAction)
+            }
+            return nil
         }
     }
     
-    func onChatNotificationReceived(_ onChatNotificationReceived: @escaping () -> Void) {
-        component.setInterface("onChatNotificationReceived") { args in
-            // TODO: Implementation
+    func onChatNotificationReceived(_ onChatNotificationReceived: @escaping (BaseNotification) -> Void) {
+        component.setInterface("onChatNotificationReceived") { (model: BaseNotification?) -> Any? in
+            if let notification = model {
+                onChatNotificationReceived(notification)
+            }
+            return nil
         }
     }
 }

@@ -1,6 +1,6 @@
-typealias Channel = ChannelResource
+public typealias Channel = ChannelResource
 
-struct BaseNotification: Codable {
+public struct BaseNotification: Codable {
     let id: Int
     let title: String
     let body: String

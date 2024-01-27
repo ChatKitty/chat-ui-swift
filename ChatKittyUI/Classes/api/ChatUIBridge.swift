@@ -12,11 +12,11 @@ protocol ChatUIBridge {
     
     func onChatUiConnected(_ onChatUiConnected: @escaping () -> Void)
     
-    func onChatMounted(_ onChatMounted: @escaping (ChatMountedOptions) -> Void)
+    func onChatMounted(_ onChatMounted: @escaping (ChatComponentContext) -> Void)
     
     func onChatHeaderSelected(_ onChatHeaderSelected: @escaping (Channel) -> Void)
     
-    func onChatMenuActionSelected(_ onChatMenuActionSelected: @escaping () -> Void)
+    func onChatMenuActionSelected(_ onChatMenuActionSelected: @escaping (MenuAction) -> Void)
     
-    func onChatNotificationReceived(_ onChatNotificationReceived: @escaping () -> Void)
+    func onChatNotificationReceived(_ onChatNotificationReceived: @escaping (BaseNotification) -> Void)
 }
