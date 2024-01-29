@@ -25,6 +25,15 @@
   "dependencies": {
     "FlexHybridApp": [
       "~> 1.0.4"
+    ],
+    "Starscream": [
+      "~> 4.0.0"
+    ],
+    "RxSwift": [
+      "6.5.0"
+    ],
+    "Moya/RxSwift": [
+      "~> 15.0"
     ]
   },
   "swift_version": "5"

@@ -1,22 +1,41 @@
 PODS:
+  - Alamofire (5.8.1)
   - ChatKittyUI (0.1.0):
     - FlexHybridApp (~> 1.0.4)
+    - Moya/RxSwift (~> 15.0)
+    - RxSwift (= 6.5.0)
+    - Starscream (~> 4.0.0)
   - FlexHybridApp (1.0.4)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
+  - RxSwift (6.5.0)
+  - Starscream (4.0.6)
 
 DEPENDENCIES:
   - ChatKittyUI (from `../`)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - FlexHybridApp
+    - Moya
+    - RxSwift
+    - Starscream
 
 EXTERNAL SOURCES:
   ChatKittyUI:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ChatKittyUI: 5287566538d149596cc750be0d2690f8b63f448a
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  ChatKittyUI: b96c6edc545f03c35fbfee1f99e1a3992e9661a8
   FlexHybridApp: 4d892a14bb6a400d9e3e02c8400727c83f4539bf
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  Starscream: fb2c4510bebf908c62bd383bcf05e673720e91fd
 
 PODFILE CHECKSUM: 8616378a5f8cb443ec1d2bac0253c8a396552291
 
