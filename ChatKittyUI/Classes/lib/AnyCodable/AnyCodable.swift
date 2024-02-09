@@ -4,6 +4,16 @@ public struct AnyCodable {
     init(_ value: Codable) {
         self.value = value
     }
+    
+    func printPrettyJson() throws {
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = [.prettyPrinted, .sortedKeys] // Use .sortedKeys for consistent key ordering
+        
+        let data = try encoder.encode(self)
+        if let jsonString = String(data: data, encoding: .utf8) {
+            print(jsonString)
+        }
+    }
 }
 
 extension AnyCodable: Codable {

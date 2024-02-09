@@ -1,5 +1,3 @@
-public typealias Channel = ChannelResource
-
 public struct BaseNotification: Codable {
     let id: Int
     let title: String

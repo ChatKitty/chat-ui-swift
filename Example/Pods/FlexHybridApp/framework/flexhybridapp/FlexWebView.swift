@@ -506,6 +506,9 @@ open class FlexComponent: NSObject, WKNavigationDelegate, WKScriptMessageHandler
     }
                                 
     public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        if let data = message.body as? String? {
+            print(data)
+        }
         if let data: [String:Any] = message.body as? Dictionary {
             let mName = message.name
             let fName = data["funName"] as! String
