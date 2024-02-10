@@ -6,11 +6,7 @@ import Moya
 public typealias StompXImpl = WebsocketStompClient
 
 public final class WebsocketStompClient : StompX, WebSocketDelegate {
-    public func didReceive(event: Starscream.WebSocketEvent, client: Starscream.WebSocketClient) {
-        // TODO
-    }
-    
-    
+
     private let service = MoyaProvider<StompXStream>()
     
     public var isConnected: Bool = false
@@ -33,6 +29,7 @@ public final class WebsocketStompClient : StompX, WebSocketDelegate {
     }
     
     private var url: URL!
+    private var stompXRequest: StompXConnectRequest!
     
     // MARK: Subscriptions
     private let disposeBag = DisposeBag()
@@ -62,12 +59,10 @@ public final class WebsocketStompClient : StompX, WebSocketDelegate {
 
     public func connect(request: StompXConnectRequest) {
         let wsScheme = configuration.isSecure ? "wss" : "ws"
-        guard let url = URL(string: "\(wsScheme)://\(configuration.host)/rtm/websocket") else { fatalError("Invalid url") }
+        guard let url = URL(string: "\(wsScheme)://\(configuration.host)/rtm/websocket?api-key=\(request.apiKey)") else { fatalError("Invalid url") }
         self.url = url
+        self.stompXRequest = request
         var urlRequest = URLRequest(url: url)
-        urlRequest.setValue(request.apiKey, forHTTPHeaderField: "Api-Key")
-        urlRequest.setValue(request.username, forHTTPHeaderField: "StompX-User")
-        urlRequest.setValue("ChatKitty-iOS/\(version)", forHTTPHeaderField: "StompX-User-Agent")
         if let authParams = request.authParams {
             urlRequest.setValue(ObjectMapper.writeValueAsString(dictionary: authParams)?.base64Encoded,
                                 forHTTPHeaderField: "StompX-Auth-Params")
@@ -259,14 +254,21 @@ public final class WebsocketStompClient : StompX, WebSocketDelegate {
 
     private func websocketDidConnect(socket: WebSocketClient) {
         isConnected = true
-        sendFrame(specification.connect(host: url.host!))
+        var stompXAuthParams: String? = nil
+        if let authParams = stompXRequest.authParams {
+            stompXAuthParams = ObjectMapper.writeValueAsString(dictionary: authParams)?.base64Encoded
+        }
+        sendFrame(specification.connect(host: url.host!,
+                                        stompXUser: stompXRequest.username,
+                                        stompXUserAgent: "ChatKitty-iOS/\(version)",
+                                        stompXAuthParams: stompXAuthParams))
     }
 
     private func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
         isConnected = false
     }
 
-    public func didReceive(event: WebSocketEvent, client: WebSocket) {
+    public func didReceive(event: WebSocketEvent, client: WebSocketClient) {
         StompXLogger.logDebug("Did get event \(event)")
         switch event {
         case .connected(_):

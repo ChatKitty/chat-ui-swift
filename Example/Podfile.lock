@@ -4,7 +4,7 @@ PODS:
     - FlexHybridApp (~> 1.0.4)
     - Moya/RxSwift (~> 15.0)
     - RxSwift (= 6.5.0)
-    - Starscream (~> 4.0.0)
+    - Starscream (~> 4.0.6)
   - FlexHybridApp (1.0.4)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
@@ -31,7 +31,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
-  ChatKittyUI: b96c6edc545f03c35fbfee1f99e1a3992e9661a8
+  ChatKittyUI: e130cbcace9e26b8f6a55f5f5b13b1498288eeef
   FlexHybridApp: 4d892a14bb6a400d9e3e02c8400727c83f4539bf
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8

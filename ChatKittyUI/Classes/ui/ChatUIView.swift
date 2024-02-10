@@ -29,6 +29,10 @@ public final class ChatUIView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private let stompX = StompXImpl(configuration: StompXConfiguration(isSecure: true,
+                                                                       host: "api.chatkitty.com",
+                                                                       isDebug: false))
+    
     // MARK: Private
     
     private func build() {
@@ -62,5 +66,18 @@ public final class ChatUIView: UIView {
         }
         
         flexWebView.load(URLRequest(url: URL(string: "https://ui.chatkitty.com/chat?widget_id=\(configuration.widgetId)")!))
+        
+        stompX.connect(request: StompXConnectRequest(apiKey: configuration.apiKey, 
+                                                     username: configuration.username,
+                                                     authParams: nil,
+                                                     onConnected: {
+            print("Connected")
+        }, onConnectionLost: {
+            print("onConnectionLost")
+        }, onConnectionResumed: {
+            print("onConnectionLost")
+        }, onError: { error in
+            print("Error")
+        }))
     }
 }

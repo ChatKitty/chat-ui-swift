@@ -1,10 +1,20 @@
 import Foundation
 
 final class StompSpecification {
-    public func connect(host: String) -> StompClientFrame {
-        let headers: Set<StompHeader> = [.acceptVersion(version: "1.2"), .host(host: host),
-                                            .heartBeat(value: "10000,10000")]
+    public func connect(host: String,
+                        stompXUser: String,
+                        stompXUserAgent: String,
+                        stompXAuthParams: String?
+    ) -> StompClientFrame {
+        var headers: Set<StompHeader> = [.acceptVersion(version: "1.2"),
+                                         .host(host: host),
+                                         .heartBeat(value: "10000,10000"),
+                                         .custom(key: "StompX-User", value: stompXUser),
+                                         .custom(key: "StompX-User-Agent", value: stompXUserAgent)]
 
+        if let stompXAuthParams {
+            headers.insert(.custom(key: "StompX-Auth-Params", value: stompXAuthParams))
+        }
         return StompClientFrame(command: .connect, headers: headers)
     }
 
