@@ -1,5 +1,4 @@
 import UIKit
-import FlexHybridApp
 
 public final class ChatUIView: UIView {
     // MARK: Private members

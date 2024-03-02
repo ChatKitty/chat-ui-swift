@@ -1,5 +1,3 @@
-import FlexHybridApp
-
 let kChatUiBaseUtl = "https://ui.chatkitty.com"
 
 final class FlexChatUIBridge: ChatUIBridge {

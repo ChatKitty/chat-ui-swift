@@ -57,7 +57,8 @@ struct FlexFunc {
                 } else if e is Int || e is Double || e is Float {
                     _vString.append("\(_name):\(e!),")
                 } else if e is String || e is Character {
-                    _vString.append("\(_name):`\(e!)`,")
+                    let eEscaped = "\(e!)".replacingOccurrences(of: "`", with: "\\`")
+                    _vString.append("\(_name):`\(eEscaped)`,")
                 } else if e is [Any?] || e is [String: Any?] {
                     _vString.append("\(_name):\(try convertValue(e)),")
                 } else if e == nil || e is NSNull {

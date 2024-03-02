@@ -281,11 +281,12 @@ open class FlexComponent: NSObject, WKNavigationDelegate, WKScriptMessageHandler
         config.preferences.setValue(allow, forKey: "allowFileAccessFromFileURLs")
         config.setValue(allow, forKey: "allowUniversalAccessFromFileURLs")
     }
+
     
     private func flexInterfaceInit() {
         if !isFirstPageLoad {
             do {
-                jsString = try String(contentsOfFile: Bundle.main.privateFrameworksPath! + "/FlexHybridApp.framework/FlexHybridiOS.js", encoding: .utf8)
+                jsString = try String(contentsOfFile: Bundle.main.privateFrameworksPath! + "/ChatKittyUI.framework/FlexHybridiOS.js", encoding: .utf8)
                 var keys = ""
                 keys.append("[\"")
                 keys.append(FlexString.FLEX_DEFINE.joined(separator: "\",\""))
@@ -506,9 +507,6 @@ open class FlexComponent: NSObject, WKNavigationDelegate, WKScriptMessageHandler
     }
                                 
     public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        if let data = message.body as? String? {
-            print(data)
-        }
         if let data: [String:Any] = message.body as? Dictionary {
             let mName = message.name
             let fName = data["funName"] as! String

@@ -22,10 +22,8 @@
     "ios": "15.0"
   },
   "source_files": "ChatKittyUI/Classes/**/*",
+  "resources": "ChatKittyUI/Classes/WebBridge/js/*.js",
   "dependencies": {
-    "FlexHybridApp": [
-      "~> 1.0.4"
-    ],
     "Starscream": [
       "~> 4.0.6"
     ],

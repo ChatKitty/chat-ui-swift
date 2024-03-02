@@ -1,5 +1,3 @@
-import FlexHybridApp
-
 final class FlexStompXBridge: StompXBridge {
     private let component: FlexComponent
     

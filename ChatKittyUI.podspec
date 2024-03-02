@@ -32,8 +32,8 @@ ChatKitty UI offers a plug-and-play solution for integrating a fully-functional 
   s.ios.deployment_target = '15.0'
 
   s.source_files = 'ChatKittyUI/Classes/**/*'
-  
-  s.dependency 'FlexHybridApp', '~> 1.0.4'
+  s.resources    = 'ChatKittyUI/Classes/WebBridge/js/*.js'
+
   s.dependency 'Starscream', '~> 4.0.6'
   s.dependency 'RxSwift', '6.5.0'
   s.dependency 'Moya/RxSwift', '~> 15.0'
