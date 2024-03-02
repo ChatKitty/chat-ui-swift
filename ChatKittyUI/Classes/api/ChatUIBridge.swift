@@ -19,4 +19,6 @@ protocol ChatUIBridge {
     func onChatMenuActionSelected(_ onChatMenuActionSelected: @escaping (MenuAction) -> Void)
     
     func onChatNotificationReceived(_ onChatNotificationReceived: @escaping (BaseNotification) -> Void)
+    
+    func onPostMessage(_ onPostMessage: @escaping (ChatUIMessage) -> Void)
 }

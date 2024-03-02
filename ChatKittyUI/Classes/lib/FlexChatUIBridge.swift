@@ -1,11 +1,13 @@
 import FlexHybridApp
 
+let kChatUiBaseUtl = "https://ui.chatkitty.com"
+
 final class FlexChatUIBridge: ChatUIBridge {
     
     private let component: FlexComponent
     
     init(component: FlexComponent) {
-        component.setBaseUrl("https://ui.chatkitty.com")
+        component.setBaseUrl(kChatUiBaseUtl)
         self.component = component
     }
     
@@ -56,4 +58,14 @@ final class FlexChatUIBridge: ChatUIBridge {
             return nil
         }
     }
+    
+    func onPostMessage(_ onPostMessage: @escaping (ChatUIMessage) -> Void) {
+        component.setInterface("postMessage")  { (model: ChatUIMessage?) -> Any? in
+            if let message = model {
+                onPostMessage(message)
+            }
+            return nil
+        }
+    }
 }
+

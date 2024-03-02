@@ -42,12 +42,12 @@ public struct StompXRelayResourceRequestDictionary: RelayResourceRequestable {
 public struct StompXRelayResourceRequest<R: Codable>: RelayResourceRequestable {
     let destination: String
     let parameters: Dictionary<String, String>?
-    let onSuccess: (R) -> Void
+    let onSuccess: (R?) -> Void
     let onError: (StompXError) -> Void
     
     init(destination: String,
          parameters: Dictionary<String, String>? = nil,
-         onSuccess: @escaping (R) -> Void,
+         onSuccess: @escaping (R?) -> Void,
          onError: @escaping (StompXError) -> Void
     ) {
         self.destination = destination

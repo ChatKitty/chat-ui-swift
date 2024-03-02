@@ -355,3 +355,17 @@ extension String {
         return formatter.date(from: trimmedIsoString)
     }
  }
+
+
+extension Encodable {
+    func synthesize<T: Decodable>(to type: T.Type) -> T? {
+        do {
+            let jsonData = try JSONEncoder().encode(self)
+            let object = try JSONDecoder().decode(type, from: jsonData)
+            return object
+        } catch {
+            StompXLogger.logError(String(describing: error))
+            return nil
+        }
+    }
+}

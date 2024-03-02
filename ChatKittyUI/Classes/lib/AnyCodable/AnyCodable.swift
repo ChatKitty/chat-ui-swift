@@ -1,7 +1,7 @@
 public struct AnyCodable {
-    var value: Codable
+    var value: Codable?
 
-    init(_ value: Codable) {
+    init(_ value: Codable?) {
         self.value = value
     }
     
@@ -34,7 +34,7 @@ extension AnyCodable: Codable {
         } else if let value = try? container.decode([String: AnyCodable].self) {
             self.value = value
         } else {
-            throw DecodingError.typeMismatch(AnyCodable.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "The container contains an unhandled type"))
+            self.value = nil
         }
     }
 
