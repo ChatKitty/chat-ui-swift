@@ -7,7 +7,8 @@ public final class ChatUIView: UIView {
     private let flexComponent = FlexComponent()
     private lazy var bridge: ChatUIBridge = FlexChatUIBridge(component: flexComponent)
     private lazy var stompXBridge: StompXBridge = FlexStompXBridge(component: flexComponent)
-
+    private lazy var chatUiStompXInteractor = ChatUIStompXInteractor(stompX: stompX, stompXBridge: stompXBridge)
+    
     // MARK: UI Components
     private lazy var flexWebView: FlexWebView = {
         let view = FlexWebView(frame: .zero, component: flexComponent)
@@ -50,7 +51,7 @@ public final class ChatUIView: UIView {
         let options = InitializeOptions(
             username: configuration.username,
             theme: configuration.theme,
-            apiConnectionType: "standalone"
+            apiConnectionType: "shared"
         )
         
         bridge.onChatUiConnected { [weak self] in
@@ -69,66 +70,9 @@ public final class ChatUIView: UIView {
             self?.components?.onMenuActionSelected?(action)
         }
         
-        bridge.onPostMessage { event in
-            switch event.type {
-            case "stompx:connect":
-                var writeGrant: String? = nil
-                var readGrant: String? = nil
-                
-                self.stompX.relayResource(request: StompXRelayResourceRequest<AnyCodable>(
-                    destination: "/application/v1/user.relay",
-                    onSuccess: { user in
-                    self.stompX.relayResource(request: StompXRelayResourceRequest<ChatKittyGrant>(
-                        destination: "/application/v1/user.write_file_access_grant.relay",
-                        onSuccess: { write in
-                            writeGrant = write?.grant
-                            self.stompX.relayResource(request: StompXRelayResourceRequest<ChatKittyGrant>(
-                                destination: "/application/v1/user.read_file_access_grant.relay",
-                                onSuccess: { read in
-                                readGrant = read?.grant
-                                    if let user {
-                                        self.stompXBridge.onMessage(id: nil,
-                                                                    type: .connectSuccess,
-                                                                    payload: ConnectPayload(user: user,
-                                                                                            write: writeGrant,
-                                                                                            read: readGrant))
-                                    }
-                            }, onError: { error in
-                                print(error.localizedDescription)
-                            }))
-                        }, onError: { error in
-                            print(error.localizedDescription)
-                        }))
-                }, onError: { error in
-                    print(error.localizedDescription)
-                }))
-            case "stompx:resource.relay":
-                if let relayPayload = event.payload?.synthesize(to: StompXRelayPayload.self) {
-                    self.stompX.relayResource(request: StompXRelayResourceRequest<AnyCodable>(
-                        destination: relayPayload.destination,
-                        parameters: relayPayload.parameters?.mapValues { $0 ? "true" : "false" } ?? [:],
-                        onSuccess: { model in
-                            guard let model else {
-                                return
-                            }
-                            self.stompXBridge.onMessage(id: event.id,
-                                                        type: .relaySuccess,
-                                                        payload: StompXResource(resource: model))
-                    }, onError: { error in
-                        print(error.localizedDescription)
-                    }))
-                }
-            case "stompx:topic.subscribe":
-                break
-//                if let subscribePayload = event.payload?.synthesize(to: StompXSubscribePayload.self) {
-//                    let _ = self.stompX.listenToTopic(request: StompXListenToTopicRequest(topic: subscribePayload.topic, onSuccess: {
-//                        self.stompXBridge.onMessage(id: event.id ?? "unknown",
-//                                                    type: .topicSubscribed)
-//                    }))
-//                }
-            default:
-                print("OnPostMesage \(event.type)")
-                break
+        bridge.onPostMessage { [weak self] event in
+            DispatchQueue.main.async {
+                self?.chatUiStompXInteractor.onReceiveMessage(event: event)
             }
         }
         

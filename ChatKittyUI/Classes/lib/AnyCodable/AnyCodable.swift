@@ -56,7 +56,7 @@ extension AnyCodable: Codable {
         case let dictionary as [String: AnyCodable]:
             try container.encode(dictionary)
         default:
-            throw EncodingError.invalidValue(value, EncodingError.Context(codingPath: encoder.codingPath, debugDescription: "AnyCodable value cannot be encoded"))
+            try container.encodeNil()
         }
     }
 }

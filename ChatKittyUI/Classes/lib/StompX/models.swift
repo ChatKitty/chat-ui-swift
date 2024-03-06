@@ -39,6 +39,8 @@ enum FlexStompXEventType: String {
     case streamProgressCancelled = "stompx:stream.progress.cancelled"
 }
 
+final class EmptyResource: Codable { }
+
 final class StompXResource: Codable {
     let resource: AnyCodable
     
@@ -54,6 +56,16 @@ final class StompXRelayPayload: Codable {
 
 final class StompXSubscribePayload: Codable {
     let topic: String
+}
+
+final class StompXPerformActionPayload: Codable {
+    let destination: String
+    let body: AnyCodable?
+}
+
+final class StompXListenForEventPayload: Codable {
+    let topic: String
+    let event: String
 }
 
 final class ConnectPayload: Codable {
