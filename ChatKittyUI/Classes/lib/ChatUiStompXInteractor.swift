@@ -105,7 +105,8 @@ final class ChatUIStompXInteractor {
                 subscriptionMap[id]?()
             }
         case "stompx:disconnect":
-            self.stompX.disconnect {  }
+            subscriptionMap.forEach { $0.value() }
+            subscriptionMap.removeAll()
         default:
             // TODO: Log to Sentry of an unhandled event
             break
