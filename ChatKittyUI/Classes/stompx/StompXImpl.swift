@@ -40,7 +40,6 @@ public final class WebsocketStompClient : StompX, WebSocketDelegate {
     
     private let pendingRelayRequests = ThreadSafeDictionary<String, RelayResourceRequestable>()
     private let pendingActionRequests = ThreadSafeDictionary<String, RelayResourceRequestable>()
-    private let topics = ThreadSafeDictionary<String, RelayResourceRequestable>()
     private let eventHandlers = ThreadSafeDictionary<String, [StompXEventHandlable]>()
     
     private var subscriptionToDisposeBag = Dictionary<String, DisposeBag>()
@@ -175,23 +174,11 @@ public final class WebsocketStompClient : StompX, WebSocketDelegate {
         }
         let id = specification.generateSubscriptionId()
         
-        let subscription = StompXSubscription(subscriptionId: subscriptionReceipt) { [weak self] data in
-            request.onNewData?(data)
-            if let self = self, let handlers = self.eventHandlers[request.topic] {
-                handlers.forEach {
-                    $0.handleJSONMessage(data: data)
-                }
-            }
-        }
-        
-        self.topics[id] = subscription
-        
         sendFrame(specification.subscribe(id: id, destination: request.topic, headers: ["receipt" : subscriptionReceipt]))
         
         return { [weak self] in
             guard let self = self else { return }
-            self.topics.removeValue(forKey: id)
-            subscription.unsubscribe(from: self)
+            unsubscribe(subscriptionId: id)
         }
     }
     
@@ -325,10 +312,14 @@ public final class WebsocketStompClient : StompX, WebSocketDelegate {
                                                                       destination: frame.getHeader("destination"), subscriptionId: id,
                                                                       data: data, headers: headers)
                             }
-                            if let subscription = topics[id] {
-                                subscription.handleJSONMessage(client: self,
-                                                               destination: frame.getHeader("destination"), subscriptionId: id,
-                                                               data: data, headers: headers)
+                            
+                            if frame.containsHeader("destination") {
+                                let destination = frame.getHeader("destination")
+                                if let handlers = self.eventHandlers[destination] {
+                                    handlers.forEach {
+                                        $0.handleJSONMessage(data: data)
+                                    }
+                                }
                             }
                             
                             if frame.containsHeader("receipt-id") {

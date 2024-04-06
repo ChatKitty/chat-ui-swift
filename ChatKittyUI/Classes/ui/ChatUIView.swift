@@ -1,4 +1,7 @@
 import UIKit
+import WebKit
+import AVFoundation
+import Photos
 
 public final class ChatUIView: UIView {
     // MARK: Private members
@@ -90,6 +93,19 @@ public final class ChatUIView: UIView {
             }, onError: { error in
                 print(error.localizedDescription)
             }))
+        }
+        requestCameraAccess()
+    }
+}
+
+extension ChatUIView {
+    func requestCameraAccess() {
+        AVCaptureDevice.requestAccess(for: .video) { granted in
+            if granted {
+                // Access granted, continue with camera operation
+            } else {
+                // Handle denied access
+            }
         }
     }
 }

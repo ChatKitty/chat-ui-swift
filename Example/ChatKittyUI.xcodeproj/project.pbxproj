@@ -209,10 +209,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = ZW8X7G65H3;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = ZW8X7G65H3;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -474,6 +476,7 @@
 			baseConfigurationReference = 7C4621C0C3BC7150D9E35773 /* Pods-ChatKittyUI_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZW8X7G65H3;
 				INFOPLIST_FILE = ChatKittyUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -490,6 +493,7 @@
 			baseConfigurationReference = 49DF0F34457ADE0BA3339692 /* Pods-ChatKittyUI_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZW8X7G65H3;
 				INFOPLIST_FILE = ChatKittyUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -505,6 +509,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3E0D94A39A335262B952E216 /* Pods-ChatKittyUI_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = ZW8X7G65H3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -528,6 +533,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5046A1AA9C14BBBC19BF397 /* Pods-ChatKittyUI_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = ZW8X7G65H3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
