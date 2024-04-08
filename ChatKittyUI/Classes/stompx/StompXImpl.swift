@@ -256,7 +256,7 @@ public final class WebsocketStompClient : StompX, WebSocketDelegate {
     }
 
     public func didReceive(event: WebSocketEvent, client: WebSocketClient) {
-        StompXLogger.logDebug("Did get event \(event)")
+//        StompXLogger.logDebug("Did get event \(event)")
         switch event {
         case .connected(_):
             websocketDidConnect(socket: client)

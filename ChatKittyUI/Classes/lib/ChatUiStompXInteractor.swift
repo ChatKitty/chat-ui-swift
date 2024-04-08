@@ -10,7 +10,7 @@ final class ChatUIStompXInteractor {
     }
     
     func onReceiveMessage(event: ChatUIMessage) {
-        print("[flex] " + event.toJSONString())
+//        print("[flex] " + event.toJSONString())
         switch event.type {
         case "stompx:connect":
             var writeGrant: String? = nil
