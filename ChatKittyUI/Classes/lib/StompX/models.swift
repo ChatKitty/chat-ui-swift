@@ -2,11 +2,23 @@ final class FlexStompXMessage<T: Codable>: Codable {
     let id: String?
     let type: String
     let payload: T
+    let payloadBase64: String?
     
     init(id: String?, type: String, payload: T) {
         self.id = id
         self.type = type
+        self.payloadBase64 = Self.encodeToBase64(payload)
         self.payload = payload
+    }
+    
+    private static func encodeToBase64(_ object: T) -> String? {
+        do {
+            let jsonData = try JSONEncoder().encode(object)
+            let base64String = jsonData.base64EncodedString()
+            return base64String
+        } catch {
+            return nil
+        }
     }
 }
 
