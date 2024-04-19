@@ -54,7 +54,7 @@ public final class ChatUIView: UIView {
         let options = InitializeOptions(
             username: configuration.username,
             theme: configuration.theme,
-            clientSpecification: ClientSpecification(connection: configuration.connectionApi == nil ? "standalone" : "shared")
+            clientSpecification: ClientSpecification(connection: configuration.connection == nil ? "standalone" : "shared")
         )
         
         bridge.onChatUiConnected { [weak self] in
@@ -81,7 +81,7 @@ public final class ChatUIView: UIView {
         
         flexWebView.load(URLRequest(url: URL(string: "\(kChatUiBaseUtl)/chat?widget_id=\(configuration.widgetId)&environment=production")!))
         
-        if let apiKey = configuration.connectionApi?.apiKey {
+        if let apiKey = configuration.connection?.apiKey {
             stompX.connect(request: StompXConnectRequest(apiKey: apiKey,
                                                          username: configuration.username,
                                                          authParams: nil,

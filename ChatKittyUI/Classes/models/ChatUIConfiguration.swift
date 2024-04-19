@@ -32,7 +32,7 @@ public struct UserProfile {
 }
 
 public struct ChatUIConfiguration {
-    public let connectionApi: ConnectionApi?
+    public let connection: ApiConnection?
     public let widgetId: String
     public let username: String
     public var locale: String? = nil
@@ -43,7 +43,7 @@ public struct ChatUIConfiguration {
     
     public init(widgetId: String,
                 username: String,
-                connectionApi: ConnectionApi? = nil,
+                connection: ApiConnection? = nil,
                 locale: String? = nil,
                 container: ChatUiContainer? = nil,
                 theme: Theme? = nil,
@@ -51,7 +51,7 @@ public struct ChatUIConfiguration {
                 profile: UserProfile? = nil) {
         self.widgetId = widgetId
         self.username = username
-        self.connectionApi = connectionApi
+        self.connection = connection
         self.locale = locale
         self.container = container
         self.theme = theme
@@ -60,7 +60,7 @@ public struct ChatUIConfiguration {
     }
 }
 
-public struct ConnectionApi {
+public struct ApiConnection {
     let apiKey: String
     
     public init(apiKey: String) {
